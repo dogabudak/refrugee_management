@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "an unusual refrugee"
+version = "0.1.0"
+description = "A Django project managed with Poetry"
+authors = ["Doga Budak <dogabudak@gmail.com>"]
+license = "MIT"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2"
+djangorestframework = "^3.14"
+psycopg2-binary = "^2.9"
+gunicorn = "^21.0"
+
+[tool.poetry.dev-dependencies]
+pytest-django = "^4.5"
+black = "^23.9"
+isort = "^5.12"
+django-debug-toolbar = "^4.1"
+
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
