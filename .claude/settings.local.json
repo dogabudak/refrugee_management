@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(poetry install:*)",
+      "Bash(poetry add:*)",
+      "Bash(python manage.py startapp:*)"
+    ]
+  }
+}
