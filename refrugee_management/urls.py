@@ -4,9 +4,9 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, Spec
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("items/", include("items.urls")),
-    # Game API
+    # API endpoints
     path('api/', include('game.urls')),
+    path('api/', include('items.urls')),
     # OpenAPI 3 schema
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     # Swagger UI
